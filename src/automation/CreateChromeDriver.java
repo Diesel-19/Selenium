@@ -1,4 +1,4 @@
-package day1;
+package automation;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,5 +10,13 @@ public class CreateChromeDriver {
 		driver.get("http://google.com");
 		System.out.println(driver.getTitle());
 		
+		System.out.println(driver.getCurrentUrl());
+//		System.out.println(driver.getPageSource());
+		
+		driver.get("http://yahoo.com");
+		driver.navigate().back();
+		driver.navigate().forward();
+		driver.close(); //closes current browser
+//		driver.quit(); //closes all the browsers opened by selenium
 	}
 }
