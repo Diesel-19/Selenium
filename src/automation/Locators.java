@@ -12,6 +12,6 @@ public class Locators {
 		driver.get("https://www.facebook.com");
 		driver.findElement(By.id("email")).sendKeys("This is my first code");
 		driver.findElement(By.name("pass")).sendKeys("This is the password");
-		driver.findElement(By.linkText("Forgot Password?")).click();
+//		driver.findElement(By.linkText("Forgot Password?")).click();
 	}
 }
